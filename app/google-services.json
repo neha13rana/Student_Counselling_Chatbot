@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53940200929",
+    "project_id": "chatbot-6c70c",
+    "storage_bucket": "chatbot-6c70c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53940200929:android:45adb056d2a328168b1ea0",
+        "android_client_info": {
+          "package_name": "com.example.navigationdrawer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnfK_tlabB9tPccQakRy8ywVO35c3BHs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

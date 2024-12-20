@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorSecondary"
+    android:padding="16dp">
+
+
+
+    <!-- Theme Setting Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Theme"
+            android:textSize="25sp"
+            android:textColor="?attr/colorAccent"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Theme"
+                android:textSize="20dp"
+                android:textColor="?attr/colorAccent"/>
+
+            <RadioButton
+                android:id="@+id/radio_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Theme"
+                android:textSize="20dp"
+                android:textColor="?attr/colorAccent"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="25dp"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:textSize="18sp"
+            android:textColor="?attr/colorAccent"
+            android:layout_marginBottom="8dp"/>
+
+        <Switch
+            android:id="@+id/switch_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="#E6E6FA"
+
+            android:trackTint="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/text_notification_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="18sp"
+            android:textColor="?attr/colorAccent"
+            android:text="ON"/>
+    </LinearLayout>
+
+    <!-- Reset Settings Button Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Settings"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>
