@@ -10,3 +10,4 @@ langchain-huggingface
 pypdf
 langchain-groq
 cryptography
+langchain-unstructured[local]

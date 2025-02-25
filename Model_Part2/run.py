@@ -20,7 +20,7 @@ if 'pdf_ref' not in st.session_state:
     st.session_state.pdf_ref = None
 
 # Initialize the Groq API Key and the model
-os.environ["GROQ_API_KEY"] = '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'
+os.environ["GROQ_API_KEY"] = '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'
 # config = {'max_new_tokens': 512, 'context_length': 8000}
 llm = ChatGroq(
     model='llama3-70b-8192',
@@ -182,6 +182,8 @@ def handle_uploaded_file(uploaded_file, show_in_sidebar=False):
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             st.sidebar.text_area("File Content", content, height=300)
+
+        
     
     # Optionally show document in the main content area
     # st.write(f"### Main Panel - {uploaded_file.name}")

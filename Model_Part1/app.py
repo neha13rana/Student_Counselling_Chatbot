@@ -3,7 +3,7 @@ import torch
 from model2 import ChatbotModel  # Assuming your model code is saved as chatbot_model.py
 
 # Load the chatbot model (replace "model.pt" with your actual saved model path if needed)
-chatbot = ChatbotModel.load("model.pt")
+chatbot = ChatbotModel.load("model3.pt")
 
 def generate_response(user_input):
     return chatbot.get_response(user_input)
