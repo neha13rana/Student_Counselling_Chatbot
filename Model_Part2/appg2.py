@@ -157,8 +157,10 @@ Assistant: Let me provide a clear and accurate response based on the uploaded do
     )
     
     return qa_chain
-
 def process_files_and_query(files, query):
+    if len(files) > 5:
+        return "Error: You can upload a maximum of 5 files only."
+    
     # Ensure temp directory exists
     os.makedirs("temp", exist_ok=True)
     
@@ -190,6 +192,9 @@ def process_files_and_query(files, query):
     return result
 def handle_uploaded_file(uploaded_files, show_in_sidebar=False):
     sidebar_content = ""
+    
+    if len(uploaded_files) > 5:
+        return "Error: You can upload a maximum of 5 files only."
     
     # If the uploaded_files is a list, process each file
     for uploaded_file in uploaded_files:
@@ -232,6 +237,10 @@ def handle_uploaded_file(uploaded_files, show_in_sidebar=False):
 
 # Gradio interface setup
 def upload_and_display(files):
+
+    if len(files) > 5:
+        return "Error: You can upload a maximum of 5 files only."
+    
     sidebar_content = handle_uploaded_file(files, show_in_sidebar=True)
     return sidebar_content
 
@@ -243,7 +252,7 @@ def launch_gradio_app():
             with gr.Column(scale=1):  # Main content area (adjusted scale to an integer)
                 file_input = gr.File(
                     file_count="multiple", 
-                    type="filepath",  # Changed from 'file' to 'filepath'
+                    type="filepath",  # Changed from 'filepath' to 'file'
                     file_types=[".pdf", ".jpg", ".jpeg", ".png", ".bmp"],
                     label="Upload Documents (PDF/Images)"
                 )
@@ -263,11 +272,11 @@ def launch_gradio_app():
                     outputs=[output]
                 )
                 
-            with gr.Column(scale=0.5):  # Sidebar (adjusted scale to an integer)
+            with gr.Column(scale=1):  # Sidebar (adjusted scale to an integer)
                 gr.Markdown("## Sidebar")
                 file_preview = gr.HTML(label="File Preview")  # Display the preview content here
                 file_input.change(fn=upload_and_display, inputs=file_input, outputs=file_preview)
-
+    
     return demo
 
 # Launch the Gradio app
