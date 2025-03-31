@@ -170,11 +170,11 @@ This project is an intelligent virtual assistant designed to streamline the admi
       <p><strong>Theme Settings</strong></p>
     </div>
     <div style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a" width="160" alt="Feedback">
+     <img src="https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9" width="160" alt="Notification">
       <p><strong>Feedback Form</strong></p>
     </div>
     <div style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9" width="160" alt="Notification">
+      <img src="https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a" width="160" alt="Feedback">
       <p><strong>Submission Alert</strong></p>
     </div>
   </div>
