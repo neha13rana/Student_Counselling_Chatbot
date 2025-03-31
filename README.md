@@ -89,27 +89,27 @@ This project is an intelligent virtual assistant designed to streamline the admi
  
  3) Rag- Langchain : The core of our system is the Rag-Langchain pipeline, which manages the data preparation, retrieval, and processing steps to provide relevant responses to user queries. This pipeline consists of the following key components:
  
- 1. Data loader :Loads the cleaned data into the system for further processing.
- 
- 2. Document Splitting : Splits the input documents into smaller, manageable chunks. (sets the chunk size and the chunk overlapping) Splitting the main document into several smaller chunks (for retaining meaningful relationships). There are many types of document splitter but we use a character splitter that looks at characters. Chunk size : 1200, Chunk Overlap : 500
- 
- 3. Embedding : Generates vector representations of the document chunks for efficient
- retrieval. Embedding vector captures meaning, text with similar content will have similar
- vectors.
- 
- 4. Vector Store : Stores the document embeddings for quick access during search.
- 
- 5. Relevant Splitting : Identifies the most relevant document chunks to the user’s query.
- 
- 6. Search Document: Searches the relevant document chunks to find the most pertinent information.
- 
- 7. User Question : Processes the user’s query to determine the appropriate response.
- 
- 8. Prompt : Prompt Engineering specifically to teach the model for the efficient and the accurate answer here in this project i need the chat conversation in various languages so i provide the prompt template to the model according to receive the best response. It can also ensures that model is not give any malicious answer or irrelevant answer of the users question.
- 
- 9. LLM : LLMs are advanced AI systems that can perform tasks such as language translation, text completion, summarization, and conversational interactions. They work by analyzing large amounts of language data and are pre-trained on vast amounts of data. In my project, I integrated the LLM via Groq, generates the final response based on the retrieved information.
- 
- 10. Output : User can find the response within a seconds if it is relevant to the ACPC or else model can not giving any answer
+  1. Data loader :Loads the cleaned data into the system for further processing.
+  
+  2. Document Splitting : Splits the input documents into smaller, manageable chunks. (sets the chunk size and the chunk overlapping) Splitting the main document into several smaller chunks (for retaining meaningful relationships). There are many types of document splitter but we use a character splitter that looks at characters. Chunk size : 1200, Chunk Overlap : 500
+  
+  3. Embedding : Generates vector representations of the document chunks for efficient
+  retrieval. Embedding vector captures meaning, text with similar content will have similar
+  vectors.
+  
+  4. Vector Store : Stores the document embeddings for quick access during search.
+  
+  5. Relevant Splitting : Identifies the most relevant document chunks to the user’s query.
+  
+  6. Search Document: Searches the relevant document chunks to find the most pertinent information.
+  
+  7. User Question : Processes the user’s query to determine the appropriate response.
+  
+  8. Prompt : Prompt Engineering specifically to teach the model for the efficient and the accurate answer here in this project i need the chat conversation in various languages so i provide the prompt template to the model according to receive the best response. It can also ensures that model is not give any malicious answer or irrelevant answer of the users question.
+  
+  9. LLM : LLMs are advanced AI systems that can perform tasks such as language translation, text completion, summarization, and conversational interactions. They work by analyzing large amounts of language data and are pre-trained on vast amounts of data. In my project, I integrated the LLM via Groq, generates the final response based on the retrieved information.
+  
+  10. Output : User can find the response within a seconds if it is relevant to the ACPC or else model can not giving any answer
 
 
 **Web Application Architecture :**
