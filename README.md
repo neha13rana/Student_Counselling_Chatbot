@@ -117,39 +117,85 @@ This project is an intelligent virtual assistant designed to streamline the admi
 ## 📱 Application Screenshots
 
 ### Web Application
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px;">
-  <div style="display: flex; gap: 15px;">
-    <img src="https://github.com/user-attachments/assets/59991cca-f8a2-4f4e-9a20-8716692f731a" width="300" alt="Main Page">
-    <img src="https://github.com/user-attachments/assets/c7f44729-9d69-4921-b243-4e24004db744" width="300" alt="Sign-up Page">
+<div align="center" style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/59991cca-f8a2-4f4e-9a20-8716692f731a" width="300" alt="Web Main Page">
+      <p><strong>Main Page</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/c7f44729-9d69-4921-b243-4e24004db744" width="300" alt="Sign-up Page">
+      <p><strong>Sign-up Page</strong></p>
+    </div>
   </div>
-  <div style="display: flex; gap: 15px;">
-    <img src="https://github.com/user-attachments/assets/8d8f69a8-5f23-4502-95fa-f6d3245ec606" width="300" alt="Login Page">
-    <img src="https://github.com/user-attachments/assets/a8bdbce8-ce35-4ef6-a234-b59acca07abd" width="300" alt="Chat Page">
+  <div style="display: flex; gap: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/8d8f69a8-5f23-4502-95fa-f6d3245ec606" width="300" alt="Login Page">
+      <p><strong>Login Page</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/a8bdbce8-ce35-4ef6-a234-b59acca07abd" width="300" alt="Chat Interface">
+      <p><strong>Chat Interface</strong></p>
+    </div>
   </div>
 </div>
 
 ### Mobile Application
-<div align="center" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px;">
+<div align="center" style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 30px;">
   <div style="display: flex; gap: 15px; justify-content: center;">
-    <img src="https://github.com/user-attachments/assets/d87c4dc3-7aa6-43ca-9c34-645f7b6573c0" width="160" alt="Mobile Main">
-    <img src="https://github.com/user-attachments/assets/5a7eae14-c816-45ea-81f5-eb2cdaaa0c11" width="160" alt="Navigation">
-    <img src="https://github.com/user-attachments/assets/a7bc29f8-c5da-45a1-89cf-2d26f967671a" width="160" alt="Mobile Chat">
-    <img src="https://github.com/user-attachments/assets/3a6e8923-d454-4842-a0a0-efab064b095e" width="160" alt="Chat History">
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/d87c4dc3-7aa6-43ca-9c34-645f7b6573c0" width="160" alt="Mobile Home">
+      <p><strong>Home Screen</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/5a7eae14-c816-45ea-81f5-eb2cdaaa0c11" width="160" alt="Navigation">
+      <p><strong>Navigation</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/a7bc29f8-c5da-45a1-89cf-2d26f967671a" width="160" alt="Chat Screen">
+      <p><strong>Chat Screen</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/3a6e8923-d454-4842-a0a0-efab064b095e" width="160" alt="Chat History">
+      <p><strong>Chat History</strong></p>
+    </div>
   </div>
   <div style="display: flex; gap: 15px; justify-content: center;">
-    <img src="https://github.com/user-attachments/assets/5bb191d2-2f1e-4d0c-a079-b95d24b63b8d" width="160" alt="FAQ">
-    <img src="https://github.com/user-attachments/assets/0bf26a5a-4c8c-41bd-bfcd-58bd3e36c45d" width="160" alt="Theme Settings">
-    <img src="https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a" width="160" alt="Feedback">
-    <img src="https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9" width="160" alt="Notification">
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/5bb191d2-2f1e-4d0c-a079-b95d24b63b8d" width="160" alt="FAQ">
+      <p><strong>FAQ Section</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/0bf26a5a-4c8c-41bd-bfcd-58bd3e36c45d" width="160" alt="Theme Settings">
+      <p><strong>Theme Settings</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a" width="160" alt="Feedback">
+      <p><strong>Feedback Form</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9" width="160" alt="Notification">
+      <p><strong>Submission Alert</strong></p>
+    </div>
   </div>
 </div>
 
 ### Document Processing Dashboard
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-  <img src="https://github.com/user-attachments/assets/086a8ea1-bc23-4fda-9075-de0257c71865" width="300" alt="OCR Demo 1">
-  <img src="https://github.com/user-attachments/assets/461a2869-947d-4b25-9b6e-311161ee9d60" width="300" alt="OCR Demo 2">
-  <img src="https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff" width="300" alt="OCR Demo 3">
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/086a8ea1-bc23-4fda-9075-de0257c71865" width="300" alt="OCR Upload">
+    <p><strong>Document Upload</strong></p>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/461a2869-947d-4b25-9b6e-311161ee9d60" width="300" alt="OCR Processing">
+    <p><strong>Text Extraction</strong></p>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff" width="300" alt="OCR Results">
+    <p><strong>Processed Results</strong></p>
+  </div>
 </div>
+
 ## 🚀 Quick Setup Guide
 
 ### 1) Clone the Repository**
