@@ -50,7 +50,7 @@ This project is an intelligent virtual assistant designed to streamline the admi
   
   Tesseract OCR: For extracting text from uploaded documents.
 
- ** Mobile (Android)**
+ **Mobile (Android)**
  
   Android Studio: For app development.
   
