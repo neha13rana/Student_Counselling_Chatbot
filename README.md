@@ -1,8 +1,8 @@
-🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
+#🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
 
-🌟 Revolutionizing Student Admissions with AI-Powered Assistance
+**📌 Overview**
 
-Welcome to EduGuide Buddy – your intelligent, multilingual virtual assistant designed to simplify the admission process for students and educational institutions in Gujarat! Powered by cutting-edge LLMs (Large Language Models), this chatbot breaks language barriers, reduces administrative hassles, and makes education guidance accessible, fast, and efficient.
+This project is an intelligent virtual assistant designed to streamline the admission process for educational institutions in Gujarat. The chatbot supports multiple languages and leverages advanced Large Language Models (LLMs) to provide dynamic, context-aware responses. It aims to eliminate language barriers, reduce administrative workload, and enhance accessibility for students and parents.
 
 **✨ Features**
 
