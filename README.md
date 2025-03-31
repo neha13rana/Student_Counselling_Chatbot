@@ -114,71 +114,42 @@ This project is an intelligent virtual assistant designed to streamline the admi
 ![image](https://github.com/user-attachments/assets/9c1afbd3-40f4-4193-879a-94fce598cb07)
 
 
-## 📸 Screenshots
+## 📱 Application Screenshots
 
-  **1) Web Application : **
+### Web Application
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 30px;">
+  <div style="display: flex; gap: 15px;">
+    <img src="https://github.com/user-attachments/assets/59991cca-f8a2-4f4e-9a20-8716692f731a" width="300" alt="Main Page">
+    <img src="https://github.com/user-attachments/assets/c7f44729-9d69-4921-b243-4e24004db744" width="300" alt="Sign-up Page">
+  </div>
+  <div style="display: flex; gap: 15px;">
+    <img src="https://github.com/user-attachments/assets/8d8f69a8-5f23-4502-95fa-f6d3245ec606" width="300" alt="Login Page">
+    <img src="https://github.com/user-attachments/assets/a8bdbce8-ce35-4ef6-a234-b59acca07abd" width="300" alt="Chat Page">
+  </div>
+</div>
 
-  Main Page :
-  
-  ![WhatsApp Image 2024-11-15 at 17 18 51_5d7781fb](https://github.com/user-attachments/assets/59991cca-f8a2-4f4e-9a20-8716692f731a)
+### Mobile Application
+<div align="center" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px;">
+  <div style="display: flex; gap: 15px; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/d87c4dc3-7aa6-43ca-9c34-645f7b6573c0" width="160" alt="Mobile Main">
+    <img src="https://github.com/user-attachments/assets/5a7eae14-c816-45ea-81f5-eb2cdaaa0c11" width="160" alt="Navigation">
+    <img src="https://github.com/user-attachments/assets/a7bc29f8-c5da-45a1-89cf-2d26f967671a" width="160" alt="Mobile Chat">
+    <img src="https://github.com/user-attachments/assets/3a6e8923-d454-4842-a0a0-efab064b095e" width="160" alt="Chat History">
+  </div>
+  <div style="display: flex; gap: 15px; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/5bb191d2-2f1e-4d0c-a079-b95d24b63b8d" width="160" alt="FAQ">
+    <img src="https://github.com/user-attachments/assets/0bf26a5a-4c8c-41bd-bfcd-58bd3e36c45d" width="160" alt="Theme Settings">
+    <img src="https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a" width="160" alt="Feedback">
+    <img src="https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9" width="160" alt="Notification">
+  </div>
+</div>
 
-  Sign-up Page :
-
-  ![WhatsApp Image 2024-11-15 at 17 18 51_81982321](https://github.com/user-attachments/assets/c7f44729-9d69-4921-b243-4e24004db744)
-
-  Login Page :
-
-  ![WhatsApp Image 2024-11-15 at 17 18 51_d65d0101](https://github.com/user-attachments/assets/8d8f69a8-5f23-4502-95fa-f6d3245ec606)
-
-  Chat Page :
-
-  ![WhatsApp Image 2024-11-15 at 17 24 06_58b40ee6](https://github.com/user-attachments/assets/a8bdbce8-ce35-4ef6-a234-b59acca07abd)
-
-
-  **2) Mobile Application :**
-
-  Main Page :
-  
-  ![WhatsApp Image 2024-11-15 at 22 09 33_dc852104](https://github.com/user-attachments/assets/d87c4dc3-7aa6-43ca-9c34-645f7b6573c0)
-
-  Navigation Toolbar:
-  
-  ![WhatsApp Image 2024-11-15 at 22 09 34_d48ef7d5](https://github.com/user-attachments/assets/5a7eae14-c816-45ea-81f5-eb2cdaaa0c11)
-
-  
-  Chat Page:
-  
-  ![WhatsApp Image 2024-11-15 at 22 09 34_65ae0163](https://github.com/user-attachments/assets/a7bc29f8-c5da-45a1-89cf-2d26f967671a)
-
-  Chat History :
-  
-  ![WhatsApp Image 2024-11-15 at 22 09 35_09244281](https://github.com/user-attachments/assets/3a6e8923-d454-4842-a0a0-efab064b095e)
-
-  ![WhatsApp Image 2024-11-15 at 22 09 35_a92e8a02](https://github.com/user-attachments/assets/61f0616d-f99b-4c31-8d0a-a47d362f94bb)
-
-  FAQ :
-
-  ![WhatsApp Image 2024-11-15 at 22 09 36_00af2651](https://github.com/user-attachments/assets/5bb191d2-2f1e-4d0c-a079-b95d24b63b8d)
-
-  Theme Setting :
-
-  ![WhatsApp Image 2024-11-15 at 22 09 36_3a501042](https://github.com/user-attachments/assets/0bf26a5a-4c8c-41bd-bfcd-58bd3e36c45d)
-
-  Feedback + Submitted Notification : 
-
-  ![WhatsApp Image 2024-11-15 at 22 09 37_eb21f94d](https://github.com/user-attachments/assets/656dee5e-cdad-441e-9b52-86608852c00a)
-
-  ![WhatsApp Image 2024-11-15 at 22 09 37_818bf995](https://github.com/user-attachments/assets/b9a4cd62-ac10-4557-bbcb-012c6067efd9)
-
-  **3) Dashboard/ Streamlit version of Document Upload Feature :**
-
-  ![OCR1](https://github.com/user-attachments/assets/086a8ea1-bc23-4fda-9075-de0257c71865)
-  
-  ![OCR2](https://github.com/user-attachments/assets/461a2869-947d-4b25-9b6e-311161ee9d60)
-
-  ![OCR3](https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff)
-
-
+### Document Processing Dashboard
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+  <img src="https://github.com/user-attachments/assets/086a8ea1-bc23-4fda-9075-de0257c71865" width="300" alt="OCR Demo 1">
+  <img src="https://github.com/user-attachments/assets/461a2869-947d-4b25-9b6e-311161ee9d60" width="300" alt="OCR Demo 2">
+  <img src="https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff" width="300" alt="OCR Demo 3">
+</div>
 ## 🚀 Quick Setup Guide
 
 ### 1) Clone the Repository**
