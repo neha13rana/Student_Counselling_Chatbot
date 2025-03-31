@@ -4,6 +4,8 @@
 
 This project is an intelligent virtual assistant designed to streamline the admission process for educational institutions in Gujarat. The chatbot supports multiple languages and leverages advanced Large Language Models (LLMs) to provide dynamic, context-aware responses. It aims to eliminate language barriers, reduce administrative workload, and enhance accessibility for students and parents.
 
+---
+
 ## ✨ Features
 
 🎯 Multilingual Support – Get help in English, Gujarati, Hindi.
@@ -17,6 +19,8 @@ This project is an intelligent virtual assistant designed to streamline the admi
 🌐 Cross-Platform – Available on Web (MERN Stack) & Mobile (Android).
 
 💡 AI-Powered Responses – Uses LangChain + Groq LLM for fast, accurate answers.
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -54,6 +58,8 @@ This project is an intelligent virtual assistant designed to streamline the admi
   
   Shared Preferences: For managing user settings.
 
+---
+
 ## 🚀 Getting Started
 
   **Prerequisites**
@@ -65,6 +71,8 @@ This project is an intelligent virtual assistant designed to streamline the admi
   Python (for model-related scripts)
   
   Android Studio (for mobile development)
+
+---
 
 ## 🧠 Model Architecture
 
@@ -113,6 +121,7 @@ This project is an intelligent virtual assistant designed to streamline the admi
 
 ![image](https://github.com/user-attachments/assets/9c1afbd3-40f4-4193-879a-94fce598cb07)
 
+---
 
 ## 📱 Application Screenshots
 
@@ -184,17 +193,19 @@ This project is an intelligent virtual assistant designed to streamline the admi
 <div align="center" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
   <div style="text-align: center;">
     <img src="https://github.com/user-attachments/assets/086a8ea1-bc23-4fda-9075-de0257c71865" width="300" alt="OCR Upload">
-    <p><strong>Document Upload</strong></p>
+<!--     <p><strong>Document Upload</strong></p> -->
   </div>
   <div style="text-align: center;">
     <img src="https://github.com/user-attachments/assets/461a2869-947d-4b25-9b6e-311161ee9d60" width="300" alt="OCR Processing">
-    <p><strong>Text Extraction</strong></p>
+<!--     <p><strong>Text Extraction</strong></p> -->
   </div>
   <div style="text-align: center;">
     <img src="https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff" width="300" alt="OCR Results">
-    <p><strong>Processed Results</strong></p>
+<!--     <p><strong>Processed Results</strong></p> -->
   </div>
 </div>
+
+---
 
 ## 🚀 Quick Setup Guide
 
@@ -246,7 +257,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  Sync Gradle and run the app on an emulator or device.
 ```
 
-
+---
 
 
 
