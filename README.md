@@ -256,7 +256,14 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  
  Sync Gradle and run the app on an emulator or device.
 ```
+---
 
+## 👩‍💻 Contributors
+ - [evapatel1654](https://github.com/evapatel1654)
+ - [Krish-P03](https://github.com/Krish-P03)
+ - [Ashu-p07](https://github.com/Ashu-p07)
+ - [Dhruviii04](https://github.com/Dhruviii04)
+ 
 ---
 
 
