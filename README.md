@@ -1,10 +1,10 @@
 # 🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
 
-**📌 Overview**
+### 📌 Overview
 
 This project is an intelligent virtual assistant designed to streamline the admission process for educational institutions in Gujarat. The chatbot supports multiple languages and leverages advanced Large Language Models (LLMs) to provide dynamic, context-aware responses. It aims to eliminate language barriers, reduce administrative workload, and enhance accessibility for students and parents.
 
-**✨ Features**
+## ✨ Features
 
 🎯 Multilingual Support – Get help in English, Gujarati, Hindi.
 
@@ -18,7 +18,7 @@ This project is an intelligent virtual assistant designed to streamline the admi
 
 💡 AI-Powered Responses – Uses LangChain + Groq LLM for fast, accurate answers.
 
-**🛠️ Technologies Used**
+## 🛠️ Technologies Used
 
   **Backend**
   
@@ -54,7 +54,7 @@ This project is an intelligent virtual assistant designed to streamline the admi
   
   Shared Preferences: For managing user settings.
 
-**🚀 Getting Started**
+## 🚀 Getting Started
 
   **Prerequisites**
   
@@ -66,18 +66,14 @@ This project is an intelligent virtual assistant designed to streamline the admi
   
   Android Studio (for mobile development)
 
-🧠 Model Architecture
-
- **Overview**
- 
-  The chatbot leverages a Retrieval-Augmented Generation (RAG) pipeline with LangChain and Groq's LLM to provide accurate, context-aware responses. The architecture combines document retrieval with dynamic LLM     response generation.
+## 🧠 Model Architecture
 
 
-Model 1 Architecture :
+**Model 1 Architecture :**
 
 ![Minor_Diagram (1)](https://github.com/user-attachments/assets/f6c038b9-eaa4-4f75-b4a5-92e601b24bb4)
 
- Model Description
+ **Model Description**
  
  1) Data Collection : Gathering all the data from the ACPC main website. At initial stage for the testing purpose we made a question answering pairs from the various documents of acpc.
  
@@ -108,18 +104,17 @@ Model 1 Architecture :
  10. Output : User can find the response within a seconds if it is relevant to the ACPC or else model can not giving any answer
 
 
-Web Application Architecture :
+**Web Application Architecture :**
 
 ![WhatsApp Image 2024-11-15 at 17 21 03_5c6c6b97](https://github.com/user-attachments/assets/9871021f-7d49-420f-9238-3ad9078d4d8a)
 
 
-
-LLM Comparison: 
+**LLM Comparison: **
 
 ![image](https://github.com/user-attachments/assets/9c1afbd3-40f4-4193-879a-94fce598cb07)
 
 
-**📸 Screenshots**
+## 📸 Screenshots
 
   **1) Web Application : **
 
@@ -186,13 +181,13 @@ LLM Comparison:
 
 ## 🚀 Quick Setup Guide
 
-###1) Clone the Repository**
+### 1) Clone the Repository**
 ```
 git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
 ```
 
     
-###2) Backend Setup**
+### 2) Backend Setup**
 ```
  select web app backend from the branch
  cd _
@@ -201,7 +196,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  npm start
 ```
 
-###3) Frontend Setup**
+### 3) Frontend Setup**
 ```
  select web app frontend from the branch
  cd _
@@ -209,7 +204,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  npm run dev
 ```
 
-###4) Model Setup (API / Dashboard)**
+### 4) Model Setup (API / Dashboard)**
 ```
  From Branch Select Model-and-API
 
@@ -227,7 +222,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  streamlit run app.py
 ```
 
-###5) Mobile Setup**
+### 5) Mobile Setup**
 ```
  Open the mobile folder in Android Studio.
  
