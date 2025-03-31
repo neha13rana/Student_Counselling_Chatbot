@@ -1,4 +1,4 @@
-#🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
+# 🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
 
 **📌 Overview**
 
