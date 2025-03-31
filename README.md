@@ -1,22 +1,22 @@
-**Student Counselling Chatbot**
+🎓✨ EduGuide Buddy: Your Smart Student Counselling Chatbot ✨🎓
 
-**📌 Overview**
+🌟 Revolutionizing Student Admissions with AI-Powered Assistance
 
-This project is an intelligent virtual assistant designed to streamline the admission process for educational institutions in Gujarat. The chatbot supports multiple languages and leverages advanced Large Language Models (LLMs) to provide dynamic, context-aware responses. It aims to eliminate language barriers, reduce administrative workload, and enhance accessibility for students and parents.
+Welcome to EduGuide Buddy – your intelligent, multilingual virtual assistant designed to simplify the admission process for students and educational institutions in Gujarat! Powered by cutting-edge LLMs (Large Language Models), this chatbot breaks language barriers, reduces administrative hassles, and makes education guidance accessible, fast, and efficient.
 
 **✨ Features**
 
--> Multilingual Support: Provides assistance in multiple languages to cater to diverse users.
+🎯 Multilingual Support – Get help in English, Gujarati, Hindi.
 
--> Document Processing: Allows users to upload and extract information from PDFs and images using OCR (Tesseract).
+📄 Smart Document Processing – 1. Simple chat with existing data, 2. Upload PDFs & images and extract text using OCR (Tesseract).
 
--> User Authentication: Secure login/signup using JWT tokens.
+🔒 Secure Authentication – Safe login/signup with JWT tokens.
 
--> Chat History: Stores past interactions for future reference.
+📚 Chat History – Never lose a conversation; revisit past queries anytime.
 
--> Web & Mobile Applications: Available on both web (MERN stack) and mobile (Android) platforms.
+🌐 Cross-Platform – Available on Web (MERN Stack) & Mobile (Android).
 
--> Integration with LLMs: Uses LangChain and Groq for efficient query handling.
+💡 AI-Powered Responses – Uses LangChain + Groq LLM for fast, accurate answers.
 
 **🛠️ Technologies Used**
 
@@ -184,50 +184,55 @@ LLM Comparison:
   ![OCR3](https://github.com/user-attachments/assets/c93e7d92-8848-4cbe-be0a-c2f27b69aaff)
 
 
-**Installation guide**
+## 🚀 Quick Setup Guide
 
-**1) Clone the Repository**
-  
-  git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
+###1) Clone the Repository**
+```
+git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
+```
 
     
-**2) Backend Setup**
+###2) Backend Setup**
+```
+ select web app backend from the branch
+ cd _
+ npm install
+ cp .env.example .env  # Update environment variables
+ npm start
+```
 
-  select web app backend from the branch
-  cd _
-  npm install
-  cp .env.example .env  # Update environment variables
-  npm start
+###3) Frontend Setup**
+```
+ select web app frontend from the branch
+ cd _
+ npm install
+ npm run dev
+```
 
-**3) Frontend Setup**
+###4) Model Setup (API / Dashboard)**
+```
+ From Branch Select Model-and-API
 
-  select web app frontend from the branch
-  cd _
-  npm install
-  npm run dev
+ Model 1 :
+ 
+ cd Model_Part1
+ pip install -r requirements.txt
+ python run.py  
 
-**4) Model Setup (API / Dashboard)**
+ Model 2 :
+ 
+ cd Model_Part2
+ chmod +x setup.sh
+ ./setup.sh
+ streamlit run app.py
+```
 
-  From Branch Select Model-and-API
-
-  Model 1 :
-  
-  cd Model_Part1
-  pip install -r requirements.txt
-  python run.py  
-
-  Model 2 :
-  
-  cd Model_Part2
-  chmod +x setup.sh
-  ./setup.sh
-  streamlit run app.py
-  
-**5) Mobile Setup**
-    
-  Open the mobile folder in Android Studio.
-  
-  Sync Gradle and run the app on an emulator or device.
+###5) Mobile Setup**
+```
+ Open the mobile folder in Android Studio.
+ 
+ Sync Gradle and run the app on an emulator or device.
+```
 
 
 
