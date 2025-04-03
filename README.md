@@ -205,13 +205,13 @@ This project is an intelligent virtual assistant designed to streamline the admi
 
 ## 🚀 Quick Setup Guide
 
-### 1) Clone the Repository**
+### 1) Clone the Repository
 ```
 git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
 ```
 
     
-### 2) Backend Setup**
+### 2) Backend Setup
 ```
  select web app backend from the branch
  cd _
@@ -220,7 +220,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  npm start
 ```
 
-### 3) Frontend Setup**
+### 3) Frontend Setup
 ```
  select web app frontend from the branch
  cd _
@@ -228,7 +228,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  npm run dev
 ```
 
-### 4) Model Setup (API / Dashboard)**
+### 4) Model Setup (API / Dashboard)
 ```
  From Branch Select Model-and-API
 
@@ -246,7 +246,7 @@ git clone https://github.com/neha13rana/Student_Counselling_Chatbot.git
  streamlit run app.py
 ```
 
-### 5) Mobile Setup**
+### 5) Mobile Setup
 ```
  Open the mobile folder in Android Studio.
  
