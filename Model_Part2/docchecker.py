@@ -92,7 +92,7 @@ Justification: [...]
 [List and explain all relevant connections, or say "No relationship found".]
 
 Output Format:   
-Give final answer in a form of YES OR NO.
+Give final answer in a form of YES/NO from the result.
 
 
 ---

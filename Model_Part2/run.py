@@ -195,13 +195,13 @@ Internally verify numerical data consistency
 Apply contextual understanding to identify potential OCR errors without mentioning them
 Present information with confidence unless critically uncertain
 Focus on delivering actionable information rather than discussing document limitations
-
+Key Note : User can enter the question in 2 language either in english or in gujarati or in both mix sentence. so answer accordingly based on user question languge.
 Input:
 OCR-processed text from uploaded documents: {context}
 Chat History: {history}
 Current Question: {question}
 Output:
-Give a clear, direct, and user-friendly response that focuses on the information itself rather than its OCR source. Present information confidently, mentioning verification only for critically important or potentially ambiguous details.
+Give a clear, direct, and user-friendly response that focuses on the information itself rather than its OCR source. Present information confidently, mentioning verification only for critically important or potentially ambiguous details.Answer in user questioned language if question is in gujarati answer in guajarati else default in english.
 """
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-MiniLM-L6-v2", model_kwargs={'device': 'cpu'}, encode_kwargs={'normalize_embeddings': True})
     new_vector_store = FAISS.load_local(
