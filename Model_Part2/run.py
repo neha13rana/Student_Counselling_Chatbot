@@ -24,7 +24,7 @@ if 'pdf_ref' not in st.session_state:
 os.environ["GROQ_API_KEY"] = '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'
 # config = {'max_new_tokens': 512, 'context_length': 8000}
 llm = ChatGroq(
-    model='llama3-70b-8192',
+    model='llama-3.3-70b-versatile',
     temperature=0.5,
     max_tokens=None,
     timeout=None,
