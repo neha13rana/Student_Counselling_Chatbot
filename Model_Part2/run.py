@@ -7,6 +7,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.memory import ConversationBufferMemory
+# from langchain_core.memory import ConversationBufferMemory
 from langchain_groq import ChatGroq
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -88,6 +89,8 @@ def process_ocr_and_pdf_files(file_paths):
 # docs = new_vector_store.similarity_search("qux")
 # Conversational chain for Q&A
 def get_conversational_chain():
+    if 'conversation_memory' not in st.session_state:
+        st.session_state.conversation_memory = ConversationBufferMemory(memory_key="chat_history", input_key="question")
     template = """Core Identity & Responsibilities
 
 Role: Official AI Assistant for Admission Committee for Professional Courses (ACPC), Gujarat
@@ -198,7 +201,7 @@ Focus on delivering actionable information rather than discussing document limit
 Key Note : User can enter the question in 2 language either in english or in gujarati or in both mix sentence. so answer accordingly based on user question languge.
 Input:
 OCR-processed text from uploaded documents: {context}
-Chat History: {history}
+Chat History: {chat_history}
 Current Question: {question}
 Output:
 Give a clear, direct, and user-friendly response that focuses on the information itself rather than its OCR source. Present information confidently, mentioning verification only for critically important or potentially ambiguous details.Answer in user questioned language if question is in gujarati answer in guajarati else default in english.
@@ -207,8 +210,21 @@ Give a clear, direct, and user-friendly response that focuses on the information
     new_vector_store = FAISS.load_local(
         "faiss_index", embeddings, allow_dangerous_deserialization=True
     )
-    QA_CHAIN_PROMPT = PromptTemplate(input_variables=["history", "context", "question"], template=template)
-    qa_chain = RetrievalQA.from_chain_type(llm, retriever=new_vector_store.as_retriever(), chain_type='stuff', verbose=True, chain_type_kwargs={"verbose": True,"prompt": QA_CHAIN_PROMPT,"memory": ConversationBufferMemory(memory_key="history",input_key="question"),})
+    QA_CHAIN_PROMPT = PromptTemplate(input_variables=["chat_history", "context", "question"], template=template)
+    
+    # qa_chain = RetrievalQA.from_chain_type(llm, retriever=new_vector_store.as_retriever(), chain_type='stuff', verbose=True, chain_type_kwargs={"verbose": True,"prompt": QA_CHAIN_PROMPT,"memory": ConversationBufferMemory(memory_key="chat_history",input_key="question"),})
+    qa_chain = RetrievalQA.from_chain_type(
+        llm,
+        retriever=new_vector_store.as_retriever(),
+        chain_type='stuff',
+        verbose=True,
+        chain_type_kwargs={
+            "verbose": True,
+            "prompt": QA_CHAIN_PROMPT,
+            "memory": st.session_state.conversation_memory,
+        }
+    )
+    # qa_chain = RetrievalQA.from_chain_type(llm, retriever=new_vector_store.as_retriever(), chain_type='stuff', verbose=True, chain_type_kwargs={"verbose": True,"prompt": QA_CHAIN_PROMPT,"memory": ConversationBufferMemory(memory_key="chat_history", return_messages=True)})
     return qa_chain
      
 def handle_uploaded_file(uploaded_file, show_in_sidebar=False):
@@ -270,7 +286,11 @@ def user_input(user_question):
     # Save the question and answer to session state for history tracking
     if 'conversation_history' not in st.session_state:
         st.session_state.conversation_history = []
-    
+
+    # with st.expander('Conversation History'):
+    #     for entry in st.session_state.conversation_history:
+    #         st.info(f"Q: {entry['question']}\nA: {entry['answer']}")
+
     # Append new question and response to the history
     st.session_state.conversation_history.append({'question': user_question, 'answer': result})
     
