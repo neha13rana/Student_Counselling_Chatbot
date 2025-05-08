@@ -1,5 +1,5 @@
 import os
-os.environ["GROQ_API_KEY"] = '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'
+os.environ["GROQ_API_KEY"] = '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'
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -27,7 +27,17 @@ text_splitter = CharacterTextSplitter(
         length_function=len)
 text_chunks=text_splitter.split_documents(documents)
 
-db1 = FAISS.from_documents(text_chunks, embeddings)
+# db1 = FAISS.from_documents(text_chunks, embeddings)
+# db1.save_local("faiss_index")
+faiss_index_path = "faiss_index"
+
+if os.path.exists(faiss_index_path):
+    # Load the existing FAISS index
+    db1 = FAISS.load_local(faiss_index_path, embeddings)
+else:
+    # Create and save the FAISS index
+    db1 = FAISS.from_documents(text_chunks, embeddings)
+    db1.save_local(faiss_index_path)
 
 retriever1 = db1.as_retriever(search_type="similarity", search_kwargs={"k": 1})
 
